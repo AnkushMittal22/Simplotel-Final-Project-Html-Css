@@ -276,6 +276,7 @@ section {
 footer {
     background-image: linear-gradient(to right, #ff85a8, #ffcd68);
     height: 100vh;
+    width: 100%;
 }
 
 .container2 .center {
@@ -285,6 +286,7 @@ footer {
     letter-spacing: 5px;
     font-size: large;
     font-family: 'Roboto', sans-serif;
+    padding-top: 4rem;
 }
 
 .cards {
@@ -292,18 +294,24 @@ footer {
 
     justify-content: space-around;
     width: 100%;
-
+    object-fit: cover;
 
 
     margin: 4rem auto;
 }
 
 .card {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
     background-color: white;
-    text-align: center;
     padding: 1rem 1rem 1rem 1rem;
     border-top-right-radius: 25%;
     border-bottom-left-radius: 20%;
+    cursor: pointer;
+
 }
 
 .card img {
@@ -342,43 +350,15 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: large;
     font-weight: 800;
+    cursor: pointer;
 
 }
+
+
 
 
 
 @media (max-width:690px) {
-
-    footer {
-        height: 190vh;
-    }
-
-    .cards {
-        display: block;
-        padding: 2rem 14rem;
-
-
-
-    }
-
-    .card {
-
-
-        width: 100%;
-
-        border-top-right-radius: 25%;
-        border-bottom-left-radius: 20%;
-    }
-
-    .card img {
-        height: 140px;
-        width: 140px;
-
-    }
-}
-
-
-@media (max-width:617px) {
 
     footer {
         height: 200vh;
@@ -386,76 +366,15 @@ footer {
 
     .cards {
 
-        padding: 2rem 12rem;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 150vh;
 
 
     }
 
-    .card {
 
-
-        width: 100%;
-        margin: 1rem;
-        border-top-right-radius: 25%;
-        border-bottom-left-radius: 20%;
-    }
-
-    .card img {
-        height: 120px;
-        width: 120px;
-        border-top-right-radius: 40%;
-
-    }
-}
-
-
-@media (max-width:522px) {
-
-
-
-    .cards {
-        padding: 2rem 9rem;
-    }
-
-
-
-    .card img {
-        height: 120px;
-        width: 120px;
-        border-top-right-radius: 40%;
-
-    }
-
-    .card p {
-
-        font-size: 10px;
-
-    }
-}
-
-@media (max-width:429px) {
-
-
-
-    .cards {
-        padding: 2rem 5rem;
-    }
-
-
-
-    .card img {
-        height: 110px;
-        width: 110px;
-        border-top-right-radius: 40%;
-
-    }
-
-
-
-    .card p {
-
-        font-size: 10px;
-
-    }
 }
