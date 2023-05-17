@@ -131,11 +131,17 @@ input[type=checkbox] {
         position: absolute;
         background-color: white;
         z-index: 1;
-
         right: 0;
         left: 0;
         text-align: center;
-        padding: 20px 0;
+        height: 100vh;
+    }
+
+    .menu li {
+        margin: 2rem;
+        font-size: large;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
 
     .menu li:hover {
@@ -315,8 +321,8 @@ footer {
 }
 
 .card img {
-    height: 180px;
-    width: 180px;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
     border-top-right-radius: 25%;
 
@@ -324,14 +330,17 @@ footer {
 
 .card .card-name {
     letter-spacing: 1px;
-    padding-bottom: 0.5rem;
+    margin: 0.5rem;
 }
 
 .card p {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 100
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
 }
+
+
 
 
 .button {
@@ -358,7 +367,7 @@ footer {
 
 
 
-@media (max-width:690px) {
+@media (max-width:880px) {
 
     footer {
         height: 200vh;
@@ -376,5 +385,31 @@ footer {
 
     }
 
+    .card img {
+        height: 180px;
+        width: 180px;
+    }
 
+    .card p {
+        font-size: 12px;
+    }
+
+
+}
+
+@media (max-width:480px) {
+
+
+    .container2 .center {
+        font-size: 10px;
+    }
+
+    .card img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
 }
