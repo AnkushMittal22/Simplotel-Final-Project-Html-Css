@@ -5,9 +5,7 @@
      box-sizing: border-box;
  }
 
- body {
-     font-family: "Times New Roman", Times, serif;
- }
+
 
  a {
      text-decoration: none;
@@ -17,7 +15,7 @@
      list-style: none;
      letter-spacing: 2px;
      font-size: large;
-
+     font-family: "Times New Roman", Times, serif;
  }
 
  /* NAVBAR STYLING STARTS */
@@ -200,10 +198,11 @@
      left: 10%;
      background-color: rgba(241, 110, 132, .7);
      max-width: 600px;
-     max-height: 60%;
+     max-height: 50%;
      color: white;
      overflow: hidden;
-     padding: 3rem;
+     padding: 4rem;
+     font-family: Arial, Helvetica, sans-serif
  }
 
  /*CONTAINER H1  */
@@ -217,8 +216,9 @@
  /*CONTAINER P  */
 
  .container p {
-     letter-spacing: 2px;
-     font-weight: bold;
+     letter-spacing: 1px;
+     font-weight: 100;
+     color: rgba(255, 255, 255, 0.919);
  }
 
 
@@ -270,8 +270,6 @@
 
      .container p {
          font-size: 10px;
-         padding: 0;
-         letter-spacing: normal;
      }
  }
 
@@ -298,7 +296,8 @@
      justify-content: center;
      color: white;
      letter-spacing: 5px;
-     font-size: large;
+     font-size: larger;
+     font-family: sans-serif;
      padding-top: 6rem;
  }
 
@@ -310,6 +309,7 @@
      width: 100%;
      object-fit: cover;
      margin: 4rem auto;
+     font-family: sans-serif;
  }
 
  .card {
@@ -337,9 +337,10 @@
  }
 
  .card p {
-     font-size: 16px;
+     font-size: 14px;
      font-weight: 100;
      text-align: center;
+     color: rgba(0, 0, 0, 0.8);
  }
 
 
@@ -355,11 +356,11 @@
      width: 150px;
      height: 50px;
      background-color: pink;
-     color: #191919d4;
+     color: #191919;
      border-radius: 25px;
      border: none;
      font-size: large;
-     font-weight: 800;
+     font-weight: 600;
      cursor: pointer;
  }
 
